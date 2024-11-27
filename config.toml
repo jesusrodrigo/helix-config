@@ -4,16 +4,18 @@ theme = "tokyonight"
 mouse = true
 line-number = "relative"
 auto-info = true
+auto-format = true
 bufferline = "multiple"
 color-modes = true
 
 [editor.statusline]
-left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+left = ["mode", "spinner", "version-control", "file-name", "read-only-indicator", "file-modification-indicator"]
 center = []
 right = ["diagnostics", "selections", "register", "position", "file-encoding"]
 separator = "│"
 
 [editor.lsp]
+auto-signature-help = true
 display-messages = true
 
 [editor.cursor-shape]
@@ -26,7 +28,7 @@ hidden = false
 
 [editor.indent-guides]
 render = true
-character = "┊" # Some characters that work well: "▏", "┆", "┊", "⸽", "╎" 
+# character = "┊" # Some characters that work well: "▏", "┆", "┊", "⸽", "╎"
 skip-levels = 0
 
 [editor.soft-wrap]
